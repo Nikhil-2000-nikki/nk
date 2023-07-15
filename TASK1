@@ -1,0 +1,9 @@
+from IPython.display import display, HTML
+
+def show_image_in_google(image_name):
+    search_query = f"https://www.google.com/search?tbm=isch&q={image_name}"
+    display(HTML(f'<a href="{search_query}" target="_blank">Click here to open Google Images</a>'))
+
+# Example usage
+image_name = input("Enter the image name: ")
+show_image_in_google(image_name)
